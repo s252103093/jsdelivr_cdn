@@ -26,5 +26,4 @@ jobs:
       run: |
         git switch -c master
         git remote add gitee git@gitee.com:sun_jianjun/jsdelivr_cdn_mayun.git
-        imgbot=`git rev-parse HEAD | git show -s --format='%ae' | grep imgbot` || echo "no imgbot"
-        [[ ! -z "$imgbot" ]] && git push --set-upstream gitee master -f || echo "Ingore push"
+        git push --set-upstream gitee master -f 
