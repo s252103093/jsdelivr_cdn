@@ -26,5 +26,5 @@ jobs:
     - name: Push to gitee
       run: |
         git switch -c master
-        git remote add gitee git@gitee.com:befovy/images.git
+        git remote add gitee git@gitee.com:s252103093/images.git
         git push --set-upstream gitee master -f 
